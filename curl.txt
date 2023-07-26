@@ -1,0 +1,24 @@
+curl --request POST \
+  --url http://localhost:8080/agregados \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "campo1": [
+    {
+      "campo1": "valorString1",
+      "campo2": "valorString2",
+      "campo3": 1,
+      "campo4": 2
+    },
+    {
+      "campo1": "valorString3",
+      "campo2": "valorString4",
+      "campo3": 3,
+      "campo4": 4
+    }
+  ],
+  "campo2": "algumValor"
+}
+'
+
+curl --request GET \
+  --url http://localhost:8080/agregados/1
